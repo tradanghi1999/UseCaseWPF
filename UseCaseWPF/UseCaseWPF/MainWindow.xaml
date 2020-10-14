@@ -1,0 +1,83 @@
+﻿<Window x:Class="UseCaseWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:local="clr-namespace:UseCaseWPF"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <ComboBox HorizontalAlignment="Left" Margin="301,274,0,0" VerticalAlignment="Top" Width="180" Height="28"/>
+        <Grid HorizontalAlignment="Left" 
+              Height="165" 
+              Margin="10,98,0,0" 
+              VerticalAlignment="Top" 
+              Width="774"
+              Background="White">
+            <Label Content="Username" HorizontalAlignment="Left" Margin="244,21,0,0" VerticalAlignment="Top"/>
+            <Label Content="Password" HorizontalAlignment="Left" Margin="244,92,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" 
+                     Height="23" 
+                     Margin="244,47,0,0" 
+                     TextWrapping="Wrap" 
+                     Text="" 
+                     VerticalAlignment="Top" 
+                     Width="260"
+                     Name="txbUserName"/>
+            <PasswordBox HorizontalAlignment="Left" 
+                     Height="23" 
+                     Margin="244,118,0,0" 
+                     PasswordChar="●"
+                     VerticalAlignment="Top" 
+                     Width="260"
+                     Name="pwbPassword"
+                     />
+            <Label Content="Hide" HorizontalAlignment="Left" Margin="504,116,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="301,321,0,0" VerticalAlignment="Top" Width="75" Height="30"/>
+        <Button Content="Cancle" HorizontalAlignment="Left" Margin="406,321,0,0" VerticalAlignment="Top" Width="75" Height="30" RenderTransformOrigin="0.389,1.114"/>
+        <Label Content="Sign Up?" HorizontalAlignment="Left" Margin="301,385,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.585,-0.679"/>
+        <Label Content="Password?" HorizontalAlignment="Left" Margin="416,385,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.585,-0.679"/>
+        <Label Content="TimWork" HorizontalAlignment="Left" Margin="373,34,0,0" VerticalAlignment="Top"/>
+        <Grid Visibility="Collapsed"
+            Background="White"
+            HorizontalAlignment="Left" Height="165" Margin="10,98,0,0" VerticalAlignment="Top" Width="774">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="103*"/>
+                <ColumnDefinition Width="26*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Phone" HorizontalAlignment="Left" Margin="244,21,0,0" VerticalAlignment="Top"/>
+            <Label Content="PIN" HorizontalAlignment="Left" Margin="244,92,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" 
+                Height="23" 
+                Margin="244,47,0,0" 
+                TextWrapping="Wrap" 
+                Text="" 
+                VerticalAlignment="Top" 
+                Width="260"
+                Name="txbPhone"
+                     />
+            <PasswordBox HorizontalAlignment="Left" 
+                Height="23" 
+                Margin="244,118,0,0" 
+                PasswordChar="●"
+                VerticalAlignment="Top" 
+                Width="260"
+                Name="pwbPIN"
+                     />
+            
+            <Label Content="Hide" HorizontalAlignment="Left" Margin="504,116,0,0" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>
